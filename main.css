@@ -1,362 +1,139 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=poppins sans-serif');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
-/*.container-somil{
-   width: 100%;
-   height: 100vh;
-   background-position: center;
-   background-size: cover;
-}*/
-.topbar-somil{
-   background-color: orange;
-   color: black;
-   display: flex;
-   justify-content: center;
-   animation: somil 3s linear infinite;
-   }
-   @keyframes somil {
-      0%{background-color: orange;}
-      10%{background-color: orangered;}
-      20%{background-color: purple;}
-      30%{background-color: plum;}
-      40%{background-color: blue;}
-      50%{background-color: red;}
-      60%{background-color: yellow;}
-      70%{background-color: maroon;}
-      80%{background-color: olive;}
-      90%{background-color: khaki;}
-      100%{background-color: orange;}
-}
-
-
-.container{
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./image/bg.jpg);
-    background-position: center;
+    background: url(./images/bg.jpg);
     background-size: cover;
-
+    background-position: center;
+    animation: somil 5s linear infinite;
 }
-/*  Start Topbar  */
-.topbar{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.topbar p{
-    font-weight: bold;
-    margin: 0;
-    cursor: pointer;
-}
+    @keyframes somil {
+        100% {
+        filter: hue-rotate(360deg);
+        }
+        
+    }
 
-.topbar p:hover{
-    color: orange;
-    transition: 0.5s;
-}
-
-/*  End topbar  */
-
-/* ======================================*/
-
-/*  Start Navbar */
-
-.navbar{
-    background-color: rgba(255, 255, 255, 0.284);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navlogo{
-    width: 250px;
-    height: auto;
-    cursor: pointer;
-}
-.nav-menu a{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 10px;
-
-}
-.nav-menu a:hover{
-    /*background-color: gray;*/
-    color: white;
-    transition: 0.5s;
-
-}
-/* End navbar */
-
-/*=================================================================*/
-
-.content{
-    /*border: 2px solid white; */
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
-.content-text{
-    width: 600px;
-   /* border: 2px solid white;*/
-
-}
-.content-text h2{
-    color: white;
-    margin: 0;
-    font-size: 40px;
-}
-.content-text p{
-    color: white;
-    margin: 15px;
-
-}
-.content-text button{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
-    width: 120px;
-    border-radius: 50px;
-    margin: 5px;
-
-}
-.content-text button:hover{
-    background-color: gray;
-    color: white;
-    border: none;
-    transition: 0.5s;
-}
-/*===========================Start Section 2================================*/
-
-.section-2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 70px;
-    background-color: rgb(243, 243, 243);
-
-}
-.sec-box{
-    border: 2px solid black;
-    border-radius: 5px;
-    width: 200px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 5px 5px 3px rgb(196, 196, 196);
-}
-.sec-box h2{
-    color: darkred;
-    margin: 0;
-    font-weight: bold;
-    font-size: 30px;
-}
-.sec-box p{
-    color: gray;
-}
-.sec-box button{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
-    width: 120px;
-    border-radius: 50px;
-    margin: 5px;
-    margin-top: 15px;
-}
-.sec-box:hover{
-    background-color: rgba(211, 211, 211, 0.952);
-    transition: 0.5s;
-
-}
-.sec-box p:hover{
-    color: black;
-}
-.sec-box button:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: 0.5s;
-}
-/*=========================End section 2===================*/
- video{
-    width: 100%;
-    height: auto;
- }
- .row-1{
-    text-align: center;
-    margin-bottom: 20px;
- }
- .row-1 img{
-    width: 250px;
-    height: auto;
-    margin: 10px;
-    box-shadow: 5px 5px 5px gray;
-
- }
- .row-1 img:hover{
-    width: 230px;
-    height: auto;
-    transition: 0.5s;
- }
- /*=========================Start Footer====================*/
- .footer{
-    background-color: rgba(0, 0, 0, 0.151);
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- .logo-content{
-   /* border: 1px solid black;*/
-   width: 250px;
- }
- .logo-content img{
-    width: 230px;
- }
- .logo-content a{
-    text-decoration: none;
-    color: black;
- }
- .logo-content button{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
-    width: 120px;
-    border-radius: 50px;
-    margin: 5px;
-    margin-top: 15px;
- }
- .logo-content button:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: 0.5s;
- }
-
- .pages{
-    /*border: 1px solid black;*/
-    width: fit-content;
- }
- .pages h2{
-    margin: 0;
- }
- .pages li{
-    margin-top: 20px;
-    margin-bottom: 20px;
- }
- .pages a{
-    text-decoration: none;
-    color: black;
-    /*text-transform: uppercase;*/
- }
- .contact{
-    /*border: 1px solid black;*/
-    width: fit-content;
- }
- .contact h2{
-    margin: 0;
- }
- .contact p{
-    margin-bottom: 20px;
- }
- .support{
-    /*border: 1px solid black;*/
-    width: fit-content;
- }
-
- .support h2{
-    margin: 0;
-
- }
- .support li{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    list-style: none;
- }
-
- .support a{
-    text-decoration: none;
-    color: black;
-    /*text-transform: uppercase;*/
- }
- /*=========================End Footer =======================*/
-
- .bottombar{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-
- }
- .bottombar h2{
-    font-weight: bold;
-    margin: 0;
-    cursor: pointer;
- }
- .bottombar p:hover{
-    color: orange;
-    transition: 0.5s;
- }
-
- /*=============================End bottombar===========================*/
- .social-icons{
-    background-color: orange;
-    padding: 5px;
-    text-align: center;
-    
-    
- }
- .social-icons i{
-    font-size: 35px;
-    margin: 10;
-    color: black;
-    animation: rotate 2s linear infinite;
-
- }
- @keyframes rotate {
-   0%{transform: rotate(0deg);}
-   100%{transform: rotate(360deg);}
-   
-}
- .social-icons i:hover{
-    color: white;
-    transition: 0.5s;
- }
- .main-box{
-    width: 50%;
+.login-box{
     position: relative;
- }
- .main-box img{
-    opacity: 1;
-    display: block;
-    width: 50%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
- }
- .main-content{
-    transition: .5s ease;
-    opacity: 0;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+ h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
 
- }
- .main-box:hover img{
-    opacity: 0.3;
- }
- .main-box:hover .main-content{
-    opacity: 1;
- }
+}
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    
+}
+.remember-forgot label input {
+    margin-right: 3px;
+
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+.register-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 360px) {
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
+    }
+}
